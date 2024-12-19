@@ -1,10 +1,10 @@
 "use client"
  
 import React, { useState } from 'react';
-import StepOne from './components/StepOne';
-import StepTwo from './components/StepTwo';
-import StepThree from './components/StepThree';
-import LastStep from './components/LastStep'
+import Stepone from './components/Stepone';
+import Steptwo from './components/Steptwo';
+import Stepthree from './components/Stepthree';
+import Laststep from './components/Laststep'
  
 const MultiStepForm = () => {
   const [step, setStep] = useState(1);
@@ -85,7 +85,7 @@ const MultiStepForm = () => {
           </>
         )}
         {step === 1 && (
-          <StepOne
+          <Stepone
             formData={formData}
             errors={errors}
             handleChange={handleChange}
@@ -95,7 +95,7 @@ const MultiStepForm = () => {
         )}
  
         {step === 2 && (
-          <StepTwo
+          <Steptwo
             formData={formData}
             errors={errors}
             handleChange={handleChange}
@@ -105,7 +105,7 @@ const MultiStepForm = () => {
         )}
  
         {step === 3 && (
-          <StepThree
+          <Stepthree
             formData={formData}
             handleChange={handleChange}
             handleFileChange={handleFileChange}
@@ -114,7 +114,7 @@ const MultiStepForm = () => {
           />
         )}
         {step === 4 && (
-          <LastStep formData={formData} />
+          <Laststep formData={formData} />
         )}
       </div>
     </div>
