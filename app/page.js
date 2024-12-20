@@ -1,10 +1,10 @@
 "use client"
  
-import React, { useState } from 'react';
-import Stepone from './components/Stepone';
-import Steptwo from './components/Steptwo';
-import Stepthree from './components/Stepthree';
-import Laststep from './components/Laststep'
+import React, { useState } from "react";
+import Stepone from "./components/Stepone";
+import Steptwo from "./components/Steptwo";
+import Stepthree from "./components/Stepthree";
+import Laststep from "./components/Laststep";
  
 const MultiStepForm = () => {
   const [step, setStep] = useState(1);
