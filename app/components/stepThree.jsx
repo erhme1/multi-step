@@ -45,7 +45,7 @@ const StepThree = ({ formData, handleChange, handleFileChange, handleBack, setSt
  
       <div className="mb-4">
         <label className="block text-sm font-medium text-gray-700">
-          Date of Birth <span className="text-red-500">*</span>
+          Date of Birth <span className="text-black">*</span>
         </label>
         <input
           type="date"
@@ -56,7 +56,7 @@ const StepThree = ({ formData, handleChange, handleFileChange, handleBack, setSt
           placeholder="--/--/--"
           className={`w-full mt-1 px-3 py-2 border ${errors.dateOfBirth ? "border-red-500" : "border-gray-300"} ${formData.dateOfBirth ? "text-black" : "text-gray-500"} rounded-md`}
         />
-        {errors.dateOfBirth && <p className="text-red-500 text-sm mt-1">{errors.dateOfBirth}</p>}
+        {errors.dateOfBirth && <p className="text-black text-sm mt-1">{errors.dateOfBirth}</p>}
       </div>
  
       <div className="mb-4">
@@ -76,7 +76,7 @@ const StepThree = ({ formData, handleChange, handleFileChange, handleBack, setSt
             />
           ) : (
             <div className="flex flex-col items-center text-gray-500">
-              <span className="text-3xl">📷</span>
+              <span className="text-3xl"></span>
               <p className="mt-2">Add image</p>
             </div>
           )}

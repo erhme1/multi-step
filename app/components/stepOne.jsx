@@ -41,7 +41,7 @@ const StepOne = ({ formData, errors, handleChange, handleNext }) => {
     <div>
       <div className="mb-4">
         <label className="block text-sm font-medium text-gray-700">
-          First Name <span className="text-red-500">*</span>
+          First Name <span className="text-black">*</span>
         </label>
         <input
           type="text"
@@ -62,7 +62,7 @@ const StepOne = ({ formData, errors, handleChange, handleNext }) => {
  
       <div className="mb-4">
         <label className="block text-sm font-medium text-gray-700">
-          Last Name <span className="text-red-500">*</span>
+          Last Name <span className="text-black">*</span>
         </label>
         <input
           type="text"
@@ -83,7 +83,7 @@ const StepOne = ({ formData, errors, handleChange, handleNext }) => {
  
       <div className="mb-4">
         <label className="block text-sm font-medium text-gray-700">
-          Username <span className="text-red-500">*</span>
+          Username <span className="text-black">*</span>
         </label>
         <input
           type="text"
@@ -91,7 +91,7 @@ const StepOne = ({ formData, errors, handleChange, handleNext }) => {
           value={formData.username}
           onChange={handleInputChange}
           onBlur={() => setTouched({ ...touched, username: true })}
-          className={`w-full mt-1 px-3 py-2 border ${validateUsername(formData.username) ? (usernameTaken ? "border-red-500" : "border-gray-300") : "border-red-500"} ${formData.username ? "text-black" : "text-gray-500"} rounded-md`}
+          className={`w-full mt-1 px-3 py-2 border ${validateUsername(formData.username) ? (usernameTaken ? "border-black" : "border-gray-300") : "border-red-500"} ${formData.username ? "text-black" : "text-gray-500"} rounded-md`}
           placeholder="Enter username"
         />
         {usernameTaken && touched.username && (
